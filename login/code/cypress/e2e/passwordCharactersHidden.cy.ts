@@ -12,6 +12,8 @@ it("the password is hidden until the eye icon is clicked", function () {
     cy.get(loginPageSelectors.passwordInput).should('have.attr', 'type', 'password')
     cy.get(loginPageSelectors.passwordEyeIcon).click()
     cy.get(loginPageSelectors.passwordInput).should('have.attr', 'type', 'text')
+    cy.get(loginPageSelectors.passwordEyeIcon).click()
+    cy.get(loginPageSelectors.passwordInput).should('have.attr', 'type', 'password')
 })
 
 })

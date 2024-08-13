@@ -1,0 +1,10 @@
+{
+    "registeredEmail": "admin@example.com",
+    "unregisteredEmail": "user@example.com",
+    "invalidFormatEmail": "email@exmaple",
+    "password": "MySecretPassword88?",
+    "invalidPassword": "Password2001@",
+    "successMessage": "Woohoo I'm logged in!",
+    "shortPassword": "Passw0!",
+    "noSpecialCharPass": "Passw0rd"
+}

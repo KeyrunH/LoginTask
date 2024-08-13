@@ -1,0 +1,15 @@
+export enum ReactIcon {
+  WARE_LOGO = "WareLogo",
+  WARE_CALENDAR_EMPTY_OUTLINE = "WareCalendarEmptyOutline",
+  WARE_CHEVRON_DOWN_OUTLINE = "WareChevronDownOutline",
+  WARE_CHEVRON_UP_OUTLINE = "WareChevronUpOutline",
+  WARE_CHECK = "WareCheck",
+  WARE_CROSS_OUTLINE = "WareCrossOutline",
+  WARE_CROSS = "WareCross",
+  WARE_ERROR_OUTLINE = "WareErrorOutline",
+  WARE_EYE_OPEN_OUTLINE = "WareEyeOpenOutline",
+  WARE_EYE_CLOSED_OUTLINE = "WareEyeClosedOutline",
+  WARE_CHECKBOX_TICK = "WareCheckboxTick",
+  WARE_CHECKBOX_INDETERMINATE = "WareCheckboxIndeterminate",
+  WARE_ERROR = "WareError",
+}

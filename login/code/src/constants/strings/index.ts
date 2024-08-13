@@ -1,0 +1,15 @@
+export const UI_STRINGS = {
+  Login: "Login",
+  Ware: "Ware",
+  Email: "Email",
+  ForgotPassword: "Forgot password",
+  YourEmailAddress: "Your email address",
+  Password: "Password",
+  EnterYourPassword: "Enter your password",
+  RememberMe: "Remember me",
+  EmailIsRequired: "Email is required",
+  InvalidEmail: "Invalid email",
+  PasswordIsRequired: "Password is required",
+  Error: "Error",
+  Success: "Success",
+};

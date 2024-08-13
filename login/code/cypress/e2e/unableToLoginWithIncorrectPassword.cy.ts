@@ -6,11 +6,11 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
-it("unable to login with unregistered user", function () {
-  cy.get(loginPageSelectors.emailInput).type(this.data.unregisteredEmail)
+it("unable to login with a registered email address and incorrect password", function () {
+  cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
   cy.get(loginPageSelectors.passwordInput).type(this.data.invalidPassword)
   cy.get(loginPageSelectors.loginButton).click()
-  cy.get(loginPageSelectors.errorMessage).contains("Error: The email or password you entered is invalid")
+  cy.get(loginPageSelectors.loginErrorMessage).contains("Error: The email or password you entered is invalid")
 })
 
 })

@@ -4,6 +4,8 @@
 
 For the test scenarios for the login form, I have created a document of test scenarios written in the Gherkin Syntax. These scenarios cover the happy and sad path as well as including scenarios that ensure that format checking and validation are working correctly.
 
+Supporting documentation for the manual testing can be found in the home directory, "Test Scenarios.pdf" and "Login Form Test Plan.xlsx".
+
 **End-to-End Tests**
 
 >*For the end-to-end tests using Cypress or similar alternative, we expect you to provide detailed test scripts covering various scenarios to thoroughly evaluate the functionality of the signup form. Begin by setting up your test framework and defining test suites for the signup form. Within these test suites, include scenarios such as form submission with valid and invalid input, validation of input fields, toggling functionality (e.g., password visibility and "Remember me" checkbox), and login attempts with different credentials (both correct and incorrect). Ensure to handle asynchronous operations appropriately, such as waiting for elements to appear or responses from the backend. Utilise Cypress or similar to effectively interact with elements, simulate user actions, and verify expected behavior. The goal is to achieve comprehensive test coverage and ensure the signup form functions correctly across different scenarios and user interactions.*

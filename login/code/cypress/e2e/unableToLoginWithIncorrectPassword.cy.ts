@@ -8,7 +8,7 @@ describe("login page", () => {
 
 it("unable to login with a registered email address and incorrect password", function () {
   cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
-  cy.get(loginPageSelectors.passwordInput).type(this.data.invalidPassword)
+  cy.get(loginPageSelectors.passwordInput).type(this.data.invalidPassword, {log:false})
   cy.get(loginPageSelectors.loginButton).click()
   cy.get(loginPageSelectors.loginErrorMessage).contains("Error: The email or password you entered is invalid")
 })

@@ -9,7 +9,7 @@ describe("login page", () => {
 it("the login button is disabled until a correctly formatted email address and password are entered", function () {
     cy.get(loginPageSelectors.loginButton).should('be.disabled')
     cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
-    cy.get(loginPageSelectors.passwordInput).type(this.data.password)
+    cy.get(loginPageSelectors.passwordInput).type(this.data.password, {log:false})
     cy.get(loginPageSelectors.loginButton).should('be.enabled')
 })
 

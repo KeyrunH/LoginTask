@@ -8,7 +8,7 @@ describe("login page", () => {
 
 it("can login with registered user", function () {
   cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
-  cy.get(loginPageSelectors.passwordInput).type(this.data.password)
+  cy.get(loginPageSelectors.passwordInput).type(this.data.password, {log:false})
   cy.get(loginPageSelectors.loginButton).click()
   cy.contains(this.data.successMessage)
 })

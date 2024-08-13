@@ -6,7 +6,7 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
-it("unable to login with unregistered user", function () {
+it("an incorrectly formatted email address is flagged as such", function () {
   cy.get(loginPageSelectors.emailInput).type(this.data.invalidFormatEmail)
   cy.get(loginPageSelectors.invalidEmailError).contains("Invalid email")
 })

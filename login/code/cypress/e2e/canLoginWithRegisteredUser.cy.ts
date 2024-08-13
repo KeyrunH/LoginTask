@@ -6,10 +6,10 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
-it("can login with correct credentials", function () {
-  cy.get(loginPageSelectors.emailInput).type(this.data.email)
+it("can login with registered user", function () {
+  cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
   cy.get(loginPageSelectors.passwordInput).type(this.data.password)
-  cy.get(loginPageSelectors.loginButton).contains("Login").click()
+  cy.get(loginPageSelectors.loginButton).click()
   cy.contains(this.data.successMessage)
 })
 

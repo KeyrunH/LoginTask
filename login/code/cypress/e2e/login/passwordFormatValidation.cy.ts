@@ -1,4 +1,4 @@
-import { loginPageSelectors } from '../support/loginPageSelectors'
+import { loginPageSelectors } from '../../support/loginPageSelectors'
 
 describe("login page", () => {
   beforeEach("load fixture", function () {

@@ -1,4 +1,4 @@
-import { loginPageSelectors } from '../support/loginPageSelectors'
+import { loginPageSelectors } from '../../support/loginPageSelectors'
 
 describe("login page", () => {
   beforeEach("load fixture", function () {
@@ -6,9 +6,9 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
-it("unable to login with unregistered user", function () {
-  cy.get(loginPageSelectors.emailInput).type(this.data.unregisteredEmail)
-  cy.get(loginPageSelectors.passwordInput).type(this.data.password, {log:false})
+it("unable to login with a registered email address and incorrect password", function () {
+  cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
+  cy.get(loginPageSelectors.passwordInput).type(this.data.invalidPassword, {log:false})
   cy.get(loginPageSelectors.loginButton).click()
   cy.get(loginPageSelectors.loginErrorMessage).contains("Error: The email or password you entered is invalid")
 })

@@ -1,5 +1,6 @@
 {
-    "email": "admin@example.com",
+    "registeredEmail": "admin@example.com",
+    "unregisteredEmail": "user@example.com",
     "password": "MySecretPassword88?",
     "successMessage": "Woohoo I'm logged in!"
 }

@@ -2,5 +2,6 @@
     "registeredEmail": "admin@example.com",
     "unregisteredEmail": "user@example.com",
     "password": "MySecretPassword88?",
+    "invalidPassword": "Password2001@",
     "successMessage": "Woohoo I'm logged in!"
 }

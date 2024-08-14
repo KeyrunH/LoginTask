@@ -6,6 +6,7 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
+// Test that checks that a registered email address with an incorrect password can't log in
 it("unable to login with a registered email address and incorrect password", function () {
   cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
   cy.get(loginPageSelectors.passwordInput).type(this.data.invalidPassword, {log:false})

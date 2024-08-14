@@ -6,6 +6,7 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
+// Test that checks that the password is revealed and hidden again when clicking the eye icon
 it("the password is hidden until the eye icon is clicked", function () {
     cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
     cy.get(loginPageSelectors.passwordInput).type(this.data.password, {log:false})

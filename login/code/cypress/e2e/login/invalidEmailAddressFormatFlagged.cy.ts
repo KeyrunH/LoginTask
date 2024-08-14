@@ -6,7 +6,8 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
-it("an incorrectly formatted email address is flagged as such", function () {
+// Test that ensures that an email address that is not formatted correctly is flagged as an "Invalid Email"
+it("an incorrectly formatted email address is flagged as invalid", function () {
   cy.get(loginPageSelectors.emailInput).type(this.data.invalidFormatEmail)
   cy.get(loginPageSelectors.invalidEmailError).contains("Invalid email")
 })

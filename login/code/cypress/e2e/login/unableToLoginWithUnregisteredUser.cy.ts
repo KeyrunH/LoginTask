@@ -6,6 +6,7 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
+// A test to check that an unregistered email address can't log in
 it("unable to login with unregistered user", function () {
   cy.get(loginPageSelectors.emailInput).type(this.data.unregisteredEmail)
   cy.get(loginPageSelectors.passwordInput).type(this.data.password, {log:false})

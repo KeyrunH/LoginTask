@@ -6,6 +6,7 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
+// Test that checks that a password less than 8 characters and a password that does not contain a special character are not accepted
 it("the login button is disabled when a password less than 8 characters or without a special character are entered", function () {
     cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
     cy.get(loginPageSelectors.passwordInput).type(this.data.shortPassword, {log:false})

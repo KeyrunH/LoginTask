@@ -6,6 +6,7 @@ describe("login page", () => {
     cy.visit("http://localhost:3000/")
   })
 
+// Test that ensures that a registered user can login
 it("can login with registered user", function () {
   cy.get(loginPageSelectors.emailInput).type(this.data.registeredEmail)
   cy.get(loginPageSelectors.passwordInput).type(this.data.password, {log:false})

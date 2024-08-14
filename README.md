@@ -13,3 +13,9 @@ Supporting documentation for the manual testing can be found in the home directo
 For the end-to-end tests I have used the Cypress framework.
 
 The tests themselves can be found under the *e2e* folder, each test is in a separate file for readability and clarity. To support the tests there are also fixture data and selector files to allow for reusability across tests and easier maintainability.
+
+**Unit Tests**
+
+>*For the unit tests, while not mandatory, feel free to use Jest or any similar Testing Library. Include tests for atomic-level components such as buttons, input fields, checkboxes, etc. These tests provide valuable insight into the functionality and behavior of individual components, ensuring they work as expected in isolation. When writing unit tests, focus on testing component rendering, state changes, and interaction with user input. For example, for a button component, you might test its rendering, click event handling, and visual feedback on hover or focus. Similarly, for an input field component, you could test its rendering, state management (e.g., onChange), and validation logic if applicable. While writing unit tests for every atomic component may not be feasible, covering critical components and their functionalities enhances the overall quality and maintainability of the codebase.*
+
+I made an attempt at creating unit tests using Jest, React Testing Library and Babel. There are two unit tests that test the button component. The tests check that the button is rendered and that it can be clicked.
